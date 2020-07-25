@@ -1,0 +1,21 @@
+{
+    "requests": [
+        {
+            "repeatCell": {
+                "range": {
+                    "startColumnIndex": 0,
+                    "endColumnIndex": 1,
+                    "startRowIndex": 0,
+                    "endRowIndex": 1,
+                    "sheetId": 0
+                },
+                "cell": {
+                    "userEnteredValue": {
+                        "numberValue": 10
+                    }
+                },
+                "fields": "*"
+            }
+        }
+    ]
+}

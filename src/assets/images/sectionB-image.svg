@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="433" height="452" viewBox="0 0 433 452">
+    <g>
+        <g>
+            <g>
+                <g>
+                    <text dominant-baseline="text-before-edge" style="line-height:30px;font-kerning:normal" fill="#b8cfe5" font-family="Encode Sans" font-weight="500" font-size="15" transform="translate(239 71)">
+                        <tspan style="line-height:30px;font-kerning:normal">Number of Employees</tspan>
+                    </text>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <text dominant-baseline="text-before-edge" style="line-height:30px;font-kerning:normal" fill="#b8d0e7" font-family="Encode Sans" font-weight="500" font-size="15" transform="translate(287 29)">
+                        <tspan style="line-height:30px;font-kerning:normal">NAICS Classification</tspan>
+                    </text>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <text dominant-baseline="text-before-edge" style="line-height:30px;font-kerning:normal" fill="#b8d0e6" font-family="Encode Sans" font-weight="500" font-size="15" transform="translate(183 110)">
+                        <tspan style="line-height:30px;font-kerning:normal">Alternate Names</tspan>
+                    </text>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <text dominant-baseline="text-before-edge" style="line-height:30px;font-kerning:normal" fill="#b8cfe5" font-family="Encode Sans" font-weight="500" font-size="15" transform="translate(287 149)">
+                        <tspan style="line-height:30px;font-kerning:normal">Date Founded</tspan>
+                    </text>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <text dominant-baseline="text-before-edge" style="line-height:30px;font-kerning:normal" fill="#b8cfe5" font-family="Encode Sans" font-weight="500" font-size="15" transform="translate(204 188)">
+                        <tspan style="line-height:30px;font-kerning:normal">Total Investment</tspan>
+                    </text>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <text dominant-baseline="text-before-edge" style="line-height:30px;font-kerning:normal" fill="#b8d1e8" font-family="Encode Sans" font-weight="500" font-size="15" transform="translate(148 227)">
+                        <tspan style="line-height:30px;font-kerning:normal">Angel Investors &amp; Amount</tspan>
+                    </text>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <text dominant-baseline="text-before-edge" style="line-height:30px;font-kerning:normal" fill="#b8d0e6" font-family="Encode Sans" font-weight="500" font-size="15" transform="translate(260 266)">
+                        <tspan style="line-height:30px;font-kerning:normal">Seed Investors &amp; Amount</tspan>
+                    </text>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <text dominant-baseline="text-before-edge" style="line-height:30px;font-kerning:normal" fill="#b8d1e9" font-family="Encode Sans" font-weight="500" font-size="15" transform="translate(239 305)">
+                        <tspan style="line-height:30px;font-kerning:normal">Industries</tspan>
+                    </text>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <text dominant-baseline="text-before-edge" style="line-height:30px;font-kerning:normal" fill="#b7d2eb" font-family="Encode Sans" font-weight="500" font-size="15" transform="translate(287 344)">
+                        <tspan style="line-height:30px;font-kerning:normal">Twitter URL</tspan>
+                    </text>
+                </g>
+            </g>
+            <g transform="matrix(-1 0 0 1 272 0)">
+                <g>
+                    <path fill="none" stroke="#3b739f" stroke-linecap="round" stroke-miterlimit="20" stroke-width="6" d="M268.634 10.1v59.085s-.152 12.265-8.31 15.64c-8.159 3.375-24.69 3.272-24.69 3.272v0H53.07v0" />
+                </g>
+                <g>
+                    <path fill="none" stroke="#3b739f" stroke-linecap="round" stroke-miterlimit="20" stroke-width="6" d="M268.634 247.1v59.085s-.152 12.265-8.31 15.64c-8.159 3.375-24.69 3.272-24.69 3.272v0H53.07v0" />
+                </g>
+                <g>
+                    <path fill="none" stroke="#3b739f" stroke-linecap="round" stroke-miterlimit="20" stroke-width="6" d="M268.635 49.68v87.87s-.152 18.24-8.31 23.26c-8.159 5.019-24.69 4.865-24.69 4.865v0H3v0" />
+                </g>
+                <g>
+                    <path fill="none" stroke="#3b739f" stroke-linecap="round" stroke-miterlimit="20" stroke-width="6" d="M268.635 246.68v87.87s-.152 18.24-8.31 23.26c-8.159 5.019-24.69 4.865-24.69 4.865v0H3v0" />
+                </g>
+                <g>
+                    <path fill="none" stroke="#3b739f" stroke-linecap="round" stroke-miterlimit="20" stroke-width="6" d="M268.635 18.87v0s-.152 18.24-8.31 23.259c-8.159 5.02-24.69 4.866-24.69 4.866v0H3v0" />
+                </g>
+                <g>
+                    <path fill="none" stroke="#3b739f" stroke-linecap="round" stroke-miterlimit="20" stroke-width="6" d="M268.637 9.68v87.87s-.152 18.24-8.31 23.26c-8.159 5.019-24.69 4.865-24.69 4.865v0H109.78v0" />
+                </g>
+                <g>
+                    <path fill="none" stroke="#3b739f" stroke-linecap="round" stroke-miterlimit="20" stroke-width="6" d="M268.637 332.68v87.87s-.152 18.24-8.31 23.26c-8.159 5.019-24.69 4.865-24.69 4.865v0H85.08v0" />
+                </g>
+                <g>
+                    <path fill="none" stroke="#3b739f" stroke-linecap="round" stroke-miterlimit="20" stroke-width="6" d="M268.637 89v87.87s-.152 18.24-8.31 23.26c-8.159 5.019-24.69 4.865-24.69 4.865v0H85.08v0" />
+                </g>
+                <g>
+                    <path fill="none" stroke="#3b739f" stroke-linecap="round" stroke-miterlimit="20" stroke-width="6" d="M268.635 126v87.87s-.152 18.24-8.31 23.26c-8.159 5.019-24.69 4.865-24.69 4.865v0H143.5v0" />
+                </g>
+                <g>
+                    <path fill="none" stroke="#3b739f" stroke-linecap="round" stroke-miterlimit="20" stroke-width="6" d="M268.635 166v87.87s-.152 18.24-8.31 23.26c-8.159 5.019-24.69 4.865-24.69 4.865v0H31v0" />
+                </g>
+            </g>
+            <g>
+                <path fill="none" stroke="#3b739f" stroke-linecap="square" stroke-miterlimit="20" stroke-width="6" d="M3.36 12V3" />
+            </g>
+        </g>
+    </g>
+</svg>
