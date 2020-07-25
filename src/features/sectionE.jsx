@@ -2,9 +2,16 @@ import React from 'react';
 import clsx from 'clsx';
 import { makeStyles, useMediaQuery, Typography, Container, Grid, Button, Hidden, Box } from '@material-ui/core';
 
+import Rectangle from '../assets/images/rectangle.svg';
 import DevImage from '../components/devImage';
 
 const useStyles = makeStyles(theme => ({
+  rectangle: {
+    left: 0,
+    marginTop: -360,
+    zIndex: -1,
+    position: 'relative',
+  },
   container: {
     [theme.breakpoints.up('sm')]: {
       paddingLeft: 90,
@@ -22,8 +29,8 @@ const useStyles = makeStyles(theme => ({
     height: '100%',
   },
   section: {
-    height: 200,
     backgroundColor: '#f7f9fb',
+    marginTop: 200,
   },
   textSection: {
     minHeight: 200,
@@ -39,6 +46,7 @@ const SectionE = () => {
 
   return (
     <section className={classes.section}>
+      <Rectangle className={classes.rectangle} />
       <Container className={clsx(classes.fullHeight, classes.container)}>
         <Grid container className={classes.relativeContainer}>
           <Hidden smDown>
@@ -55,7 +63,7 @@ const SectionE = () => {
               alignItems={isSmallScreen ? 'center' : 'flex-end'}
               className={clsx(classes.fullHeight, classes.textSection)}
             >
-              <Box color="#00447A" textAlign="end">
+              <Box color="#00447A" textAlign={isSmallScreen ? 'center' : 'end'}>
                 <Typography variant="h2">Developers? We’ve got you.</Typography>
               </Box>
               <Typography variant="h6">

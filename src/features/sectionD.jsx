@@ -2,7 +2,6 @@ import React from 'react';
 import clsx from 'clsx';
 import { makeStyles, useMediaQuery, Typography, Container, Grid, Card, CardContent, Box } from '@material-ui/core';
 
-import Rectangle from '../assets/images/rectangle.svg';
 import ExcelLogo from '../components/excelLogo';
 import GoogleLogo from '../components/googleLogo';
 import TableauLogo from '../components/tableauLogo';
@@ -23,11 +22,7 @@ const useStyles = makeStyles(theme => ({
   centerGrid: {
     padding: '80px 0',
   },
-  rectangle: {
-    left: 0,
-    marginTop: -65,
-    marginBottom: -10,
-  },
+
   paper: {
     width: 180,
     height: 180,
@@ -122,7 +117,6 @@ const SectionD = () => {
           </Grid>
         </Grid>
       </Container>
-      <Rectangle className={classes.rectangle} />
     </section>
   );
 };

@@ -133,7 +133,7 @@ const SectionB = () => {
                         </InputLabel>
                         <Input
                           id="input-with-icon-adornment"
-                          value="Appel"
+                          value="Apple"
                           startAdornment={
                             <InputAdornment position="start">
                               <SearchOutlined />
