@@ -11,6 +11,7 @@ import SectionB from '../features/sectionB';
 import SectionC from '../features/sectionC';
 import SectionD from '../features/sectionD';
 import SectionE from '../features/sectionE';
+import SectionF from '../features/sectionF';
 
 let theme = createMuiTheme({
   overrides: {
@@ -33,6 +34,9 @@ let theme = createMuiTheme({
     },
     primary: {
       main: '#2C7BE5',
+    },
+    secondary: {
+      main: '#FFFFFF',
     },
   },
   typography: {
@@ -62,7 +66,7 @@ let theme = createMuiTheme({
     },
     button: {
       fontSize: 15,
-      fontFamily: 'Titillium Web',
+      fontFamily: 'Encode Sans',
       fontWeight: 600,
       textTransform: 'none',
       borderWidth: 2,
@@ -88,6 +92,7 @@ const IndexPage = () => {
       <SectionC />
       <SectionD />
       <SectionE />
+      <SectionF />
     </ThemeProvider>
   );
 };

@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
   },
   relativeContainer: {
     position: 'relative',
-    bottom: 80,
+    bottom: 140,
     [theme.breakpoints.down('sm')]: {
       bottom: 40,
     },
@@ -71,7 +71,7 @@ const SectionE = () => {
                   Try our easy-to-use REST API to build <br />a completely custom solution.
                 </Box>
               </Typography>
-              <Button color="primary" variant="contained" disableElevation style={{ width: 182 }}>
+              <Button color="primary" variant="contained" disableElevation style={{ width: 141 }}>
                 View Docs
               </Button>
             </Grid>
