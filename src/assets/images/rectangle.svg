@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1281 455">
+    <defs>
+        <filter id="wzaga" width="200%" height="200%" x="-50%" y="-50%">
+            <feGaussianBlur in="SourceGraphic" result="FeGaussianBlur1752Out" stdDeviation="27.5 27.5" />
+        </filter>
+        <mask id="wzagb">
+            <path fill="#fff" d="M1280.103.664v454.012H0V276.078s293.379 33.02 654-129.854C1014.621-16.651 1280.103.664 1280.103.664z" />
+        </mask>
+    </defs>
+    <g>
+        <g>
+            <path fill="#f7f9fb" d="M1280.103.664v454.012H0V276.078s293.379 33.02 654-129.854C1014.621-16.651 1280.103.664 1280.103.664z" />
+            <path fill-opacity=".01" d="M-69 526V-71h1419v597zm737-363.776C307.379 325.099 14 292.078 14 292.078v178.598h1280.103V16.664S1028.62-.651 668 162.224z" filter="url(#wzaga)" mask="url(&quot;#wzagb&quot;)" />
+        </g>
+    </g>
+</svg>

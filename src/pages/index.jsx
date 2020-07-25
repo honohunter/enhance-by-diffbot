@@ -9,6 +9,8 @@ import Header from '../features/header';
 import SectionA from '../features/sectionA';
 import SectionB from '../features/sectionB';
 import SectionC from '../features/sectionC';
+import SectionD from '../features/sectionD';
+import SectionE from '../features/sectionE';
 
 let theme = createMuiTheme({
   overrides: {
@@ -16,6 +18,12 @@ let theme = createMuiTheme({
       root: {
         height: 41,
         borderRadius: 3,
+      },
+    },
+    MuiPaper: {
+      elevation3: {
+        boxShadow:
+          '0px 3px 3px -2px rgba(97, 139, 176,0.2), 0px 3px 4px 0px rgba(97, 139, 176,0.14), 0px 1px 8px 0px rgba(97, 139, 176,0.12)',
       },
     },
   },
@@ -78,6 +86,8 @@ const IndexPage = () => {
       <SectionA />
       <SectionB />
       <SectionC />
+      <SectionD />
+      <SectionE />
     </ThemeProvider>
   );
 };

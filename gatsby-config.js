@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `LOCKER ROOM"`,
+    title: `Enhance by diffbot`,
     description: `Exclusive conversations with insiders and fans who know wtfgo`,
-    author: `LOCKER ROOM`,
+    author: `LEnhance by diffbot`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

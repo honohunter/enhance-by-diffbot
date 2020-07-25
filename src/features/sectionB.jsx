@@ -72,7 +72,6 @@ const SectionB = () => {
   const classes = useStyles();
   const isSmallScreen = useMediaQuery(theme => theme.breakpoints.down('sm'));
 
-  console.log(isSmallScreen);
   return (
     <section className={classes.section}>
       <Container className={clsx(classes.fullHeight, classes.container)}>
