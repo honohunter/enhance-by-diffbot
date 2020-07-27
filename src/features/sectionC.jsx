@@ -21,7 +21,6 @@ const useStyles = makeStyles(theme => ({
   },
   section: {
     backgroundColor: '#F7F9FB',
-    height: 689,
   },
   centerGrid: {
     maxWidth: 535,
@@ -30,8 +29,9 @@ const useStyles = makeStyles(theme => ({
     padding: '80px 0',
   },
   dataSection: {
-    marginTop: -120,
+    marginTop: -50,
     position: 'relative',
+    paddingBottom: 100,
   },
   dataImage: {
     width: '100%',

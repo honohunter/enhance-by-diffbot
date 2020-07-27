@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Enhance by diffbot`,
     description: `Exclusive conversations with insiders and fans who know wtfgo`,
-    author: `LEnhance by diffbot`,
+    author: `Enhance by diffbot`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

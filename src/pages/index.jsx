@@ -12,6 +12,7 @@ import SectionC from '../features/sectionC';
 import SectionD from '../features/sectionD';
 import SectionE from '../features/sectionE';
 import SectionF from '../features/sectionF';
+import Footer from '../features/footer';
 
 let theme = createMuiTheme({
   overrides: {
@@ -84,7 +85,7 @@ theme = responsiveFontSizes(theme);
 const IndexPage = () => {
   return (
     <ThemeProvider theme={theme}>
-      <SEO title="LOCKER ROOM" />
+      <SEO title="Enhance" />
       <CssBaseline />
       <Header />
       <SectionA />
@@ -93,6 +94,7 @@ const IndexPage = () => {
       <SectionD />
       <SectionE />
       <SectionF />
+      <Footer />
     </ThemeProvider>
   );
 };

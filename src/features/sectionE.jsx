@@ -31,6 +31,9 @@ const useStyles = makeStyles(theme => ({
   section: {
     backgroundColor: '#f7f9fb',
     marginTop: 200,
+    [theme.breakpoints.down('sm')]: {
+      marginTop: 100,
+    },
   },
   textSection: {
     minHeight: 200,

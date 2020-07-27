@@ -4,6 +4,11 @@ import { Typography, Container, Grid, AppBar, Toolbar, Box, makeStyles } from '@
 import Logo from '../components/logo';
 
 const useStyles = makeStyles(theme => ({
+  section: {
+    [theme.breakpoints.down('xs')]: {
+      backgroundColor: '#F7F9FB',
+    },
+  },
   toolbar: {
     padding: 0,
   },
@@ -18,7 +23,7 @@ const useStyles = makeStyles(theme => ({
   },
   logoImage: {
     width: 88,
-    height: 25,
+    height: 17,
     marginTop: 5,
     marginLeft: -4,
   },
@@ -27,25 +32,27 @@ const useStyles = makeStyles(theme => ({
 const Header = () => {
   const classes = useStyles();
   return (
-    <AppBar position="static" elevation={0} color="transparent">
-      <Toolbar className={classes.toolbar}>
-        <Container className={classes.container}>
-          <Grid container direction="row" justify="space-between" alignItems="center" className={classes.logoWrapper}>
-            <Box color="#17325E">
-              <Typography variant="h5" component="div">
-                Enhance
-              </Typography>
-            </Box>
-            <Box color="#19305A" marginTop="3px">
-              <Typography variant="caption" component="div">
-                by
-              </Typography>
-            </Box>
-            <Logo className={classes.logoImage} />
-          </Grid>
-        </Container>
-      </Toolbar>
-    </AppBar>
+    <section className={classes.section}>
+      <AppBar position="static" elevation={0} color="transparent">
+        <Toolbar className={classes.toolbar}>
+          <Container className={classes.container}>
+            <Grid container direction="row" justify="space-between" alignItems="center" className={classes.logoWrapper}>
+              <Box color="#17325E">
+                <Typography variant="h5" component="div">
+                  Enhance
+                </Typography>
+              </Box>
+              <Box color="#19305A" marginTop="3px">
+                <Typography variant="caption" component="div">
+                  by
+                </Typography>
+              </Box>
+              <Logo className={classes.logoImage} />
+            </Grid>
+          </Container>
+        </Toolbar>
+      </AppBar>
+    </section>
   );
 };
 

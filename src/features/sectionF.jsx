@@ -9,10 +9,6 @@ const useStyles = makeStyles(theme => ({
       paddingRight: 90,
     },
   },
-  FullPixelImage: {
-    width: '100%',
-    maxWidth: 500,
-  },
   fullHeight: {
     height: '100%',
   },
