@@ -2,7 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import { makeStyles, Typography, Container, Grid, Button, Box } from '@material-ui/core';
 
-import Logo from '../components/logo';
+// import Logo from '../components/logo';
 
 const useStyles = makeStyles(theme => ({
   section: {

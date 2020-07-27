@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography, Container, Grid, AppBar, Toolbar, Box, makeStyles } from '@material-ui/core';
 
-import Logo from '../components/logo';
+import Logo from '../assets/images/logo.svg';
 
 const useStyles = makeStyles(theme => ({
   section: {

@@ -94,7 +94,7 @@ const IndexPage = () => {
       <SectionD />
       <SectionE />
       <SectionF />
-      <Footer />
+      {/* <Footer /> */}
     </ThemeProvider>
   );
 };

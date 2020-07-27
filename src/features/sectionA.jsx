@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import clsx from 'clsx';
-import { makeStyles, Typography, Container, Grid, Button, Box } from '@material-ui/core';
+import { makeStyles, Typography, Container, Grid, Button, Box, Slide } from '@material-ui/core';
 
 import FullPixelImage from '../components/fullPixelImage';
 
@@ -32,11 +32,22 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.up('md')]: {
       padding: '80px 0',
     },
+    position: 'relative',
+  },
+  animatedDiv: {
+    width: '100%',
+    position: 'absolute',
   },
 }));
 
 const SectionA = () => {
   const classes = useStyles();
+  const [count, setCount] = useState(0);
+
+  const handleButtonClick = () => {
+    setCount(count + 1);
+  };
+
   return (
     <section className={classes.section}>
       <Container className={clsx(classes.fullHeight, classes.container)}>
@@ -67,7 +78,13 @@ const SectionA = () => {
                   </Button>
                 </Grid>
                 <Grid item>
-                  <Button color="primary" variant="outlined" disableElevation style={{ width: 126 }}>
+                  <Button
+                    color="primary"
+                    variant="outlined"
+                    disableElevation
+                    style={{ width: 126 }}
+                    onClick={handleButtonClick}
+                  >
                     Enhance!
                   </Button>
                 </Grid>
@@ -82,7 +99,21 @@ const SectionA = () => {
               alignItems="center"
               className={clsx(classes.fullHeight, classes.centerGrid)}
             >
-              <FullPixelImage className={classes.FullPixelImage} />
+              <Slide direction="left" in={count === 0} mountOnEnter unmountOnExit>
+                <div className={classes.animatedDiv}>
+                  <FullPixelImage level="full" className={classes.FullPixelImage} />
+                </div>
+              </Slide>
+              <Slide direction="left" in={count === 1} mountOnEnter unmountOnExit>
+                <div className={classes.animatedDiv}>
+                  <FullPixelImage level="semi" className={classes.FullPixelImage} />
+                </div>
+              </Slide>
+              <Slide direction="left" in={count >= 2} mountOnEnter unmountOnExit>
+                <div className={classes.animatedDiv}>
+                  <FullPixelImage level="clear" className={classes.FullPixelImage} />
+                </div>
+              </Slide>
             </Grid>
           </Grid>
         </Grid>
