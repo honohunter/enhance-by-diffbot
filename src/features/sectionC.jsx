@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import clsx from 'clsx';
 import { makeStyles, Typography, Container, Grid, Button, Box } from '@material-ui/core';
 
 import DataInImage from '../assets/images/dataIn-image.svg';
 import DataOutImage from '../assets/images/dataOut-image.svg';
-import DataImage from '../components/dataImage';
+
+import DataTable from '../components/dataTable';
 
 const useStyles = makeStyles(theme => ({
   container: {
@@ -52,6 +53,12 @@ const useStyles = makeStyles(theme => ({
 
 const SectionC = () => {
   const classes = useStyles();
+  const [enhance, setEnhance] = useState(false);
+
+  const handelButtonClick = () => {
+    setEnhance(true);
+  };
+
   return (
     <section className={classes.section}>
       <Container className={clsx(classes.fullHeight, classes.container)}>
@@ -73,7 +80,13 @@ const SectionC = () => {
                 </Typography>
               </Box>
               <div>
-                <Button color="primary" variant="contained" disableElevation style={{ width: 126 }}>
+                <Button
+                  color="primary"
+                  variant="contained"
+                  disableElevation
+                  style={{ width: 126 }}
+                  onClick={handelButtonClick}
+                >
                   Enhance!
                 </Button>
               </div>
@@ -82,7 +95,7 @@ const SectionC = () => {
           <Grid item xs={12} className={classes.dataSection}>
             <Grid container direction="row" justify="center" alignItems="center">
               <DataInImage className={classes.DataInImage} />
-              <DataImage className={classes.dataImage} />
+              <DataTable animate={enhance} />
               <DataOutImage className={classes.DataOutImage} />
             </Grid>
           </Grid>

@@ -32,6 +32,7 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.up('md')]: {
       padding: '80px 0',
     },
+    paddingBottom: 80,
     position: 'relative',
   },
   animatedDiv: {

@@ -80,7 +80,7 @@ let theme = createMuiTheme({
   },
 });
 
-theme = responsiveFontSizes(theme);
+theme = responsiveFontSizes(theme, { factor: 3 });
 
 const IndexPage = () => {
   return (
