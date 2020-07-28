@@ -211,7 +211,10 @@ const SectionB = () => {
                         </Grid>
                       </Grid>
                       <Grid item xs={12} md={10}>
-                        <Typography variant="h6">Apple, Inc.</Typography>
+                        <Box color="#00447a" textAlign="center">
+                          <Typography variant="h6">Apple, Inc.</Typography>
+                        </Box>
+
                         <Divider className={classes.divider} />
                         <div className={classes.spacer}>
                           <Typography variant="caption">SUMMARY</Typography>

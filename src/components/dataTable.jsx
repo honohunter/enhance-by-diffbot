@@ -125,7 +125,7 @@ export default function DataTable({ animate }) {
             <TableBody>
               <StyledTableRow>
                 <StyledTableCell align="center">1</StyledTableCell>
-                <StyledTableCell align="center">Company Name</StyledTableCell>
+                <StyledTableCell align="left">Company Name</StyledTableCell>
                 <StyledTableCell align="left">Website</StyledTableCell>
                 <StyledTableCell align="left">City</StyledTableCell>
                 <StyledTableCell align="left">Country</StyledTableCell>

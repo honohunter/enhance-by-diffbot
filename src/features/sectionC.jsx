@@ -4,6 +4,7 @@ import { makeStyles, Typography, Container, Grid, Button, Box } from '@material-
 
 import DataInImage from '../assets/images/dataIn-image.svg';
 import DataOutImage from '../assets/images/dataOut-image.svg';
+import VArrow from '../assets/images/vArrow.svg';
 
 import DataTable from '../components/dataTable';
 
@@ -30,7 +31,6 @@ const useStyles = makeStyles(theme => ({
     padding: '80px 0',
   },
   dataSection: {
-    marginTop: -50,
     position: 'relative',
     paddingBottom: 100,
   },
@@ -41,13 +41,18 @@ const useStyles = makeStyles(theme => ({
   },
   DataInImage: {
     position: 'absolute',
-    left: 25,
+    left: 5,
     fill: '#d2dee8',
   },
   DataOutImage: {
     position: 'absolute',
-    right: 25,
+    right: 5,
     fill: '#d2dee8',
+  },
+  arrow: {
+    position: 'absolute',
+    bottom: -70,
+    right: -40,
   },
 }));
 
@@ -74,12 +79,12 @@ const SectionC = () => {
               <Box color="#00447A" textAlign="center">
                 <Typography variant="h2">Garbage In, Data Out</Typography>
               </Box>
-              <Box color="#5B7F9F" textAlign="center">
+              <Box color="#5B7F9F">
                 <Typography variant="h6">
                   Automatically fix misspelled names, deduplicate records, and fill in missing details.
                 </Typography>
               </Box>
-              <div>
+              <div style={{ position: 'relative' }}>
                 <Button
                   color="primary"
                   variant="contained"
@@ -89,6 +94,7 @@ const SectionC = () => {
                 >
                   Enhance!
                 </Button>
+                <VArrow className={classes.arrow} />
               </div>
             </Grid>
           </Grid>

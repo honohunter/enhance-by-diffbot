@@ -64,7 +64,6 @@ let theme = createMuiTheme({
       fontFamily: 'Encode Sans',
       fontWeight: 500,
       lineHeight: 1.5,
-      color: '#00447a',
     },
     button: {
       fontSize: 15,

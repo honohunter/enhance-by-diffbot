@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import clsx from 'clsx';
-import { makeStyles, Typography, Container, Grid, Button, Box, Slide } from '@material-ui/core';
+import { makeStyles, Typography, Container, Grid, Button, Box, Slide, Hidden } from '@material-ui/core';
 
 import FullPixelImage from '../components/fullPixelImage';
+import HArrow from '../assets/images/hArrow.svg';
 
 const useStyles = makeStyles(theme => ({
   container: {
@@ -14,6 +15,7 @@ const useStyles = makeStyles(theme => ({
   FullPixelImage: {
     width: '100%',
     maxWidth: 500,
+    filter: 'blur(8px)',
   },
   fullHeight: {
     height: '100%',
@@ -39,14 +41,27 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
     position: 'absolute',
   },
+  arrow: {
+    position: 'absolute',
+    top: '-20px',
+    left: '170px',
+    zIndex: 100,
+  },
+  enhanceAnimation: {
+    animation: '$blur 2s ease-out forwards',
+  },
+  '@keyframes blur': {
+    '0%': { filter: 'blur(8px)' },
+    '100%': { filter: 'blur(0px)' },
+  },
 }));
 
 const SectionA = () => {
   const classes = useStyles();
-  const [count, setCount] = useState(0);
+  const [enhance, setEnhance] = useState(false);
 
   const handleButtonClick = () => {
-    setCount(count + 1);
+    setEnhance(true);
   };
 
   return (
@@ -78,7 +93,7 @@ const SectionA = () => {
                     Get Started
                   </Button>
                 </Grid>
-                <Grid item>
+                <Grid item style={{ position: 'relative' }}>
                   <Button
                     color="primary"
                     variant="outlined"
@@ -88,6 +103,9 @@ const SectionA = () => {
                   >
                     Enhance!
                   </Button>
+                  <Hidden smDown>
+                    <HArrow className={classes.arrow} />
+                  </Hidden>
                 </Grid>
               </Grid>
             </Grid>
@@ -100,21 +118,10 @@ const SectionA = () => {
               alignItems="center"
               className={clsx(classes.fullHeight, classes.centerGrid)}
             >
-              <Slide direction="left" in={count === 0} mountOnEnter unmountOnExit>
-                <div className={classes.animatedDiv}>
-                  <FullPixelImage level="full" className={classes.FullPixelImage} />
-                </div>
-              </Slide>
-              <Slide direction="left" in={count === 1} mountOnEnter unmountOnExit>
-                <div className={classes.animatedDiv}>
-                  <FullPixelImage level="semi" className={classes.FullPixelImage} />
-                </div>
-              </Slide>
-              <Slide direction="left" in={count >= 2} mountOnEnter unmountOnExit>
-                <div className={classes.animatedDiv}>
-                  <FullPixelImage level="clear" className={classes.FullPixelImage} />
-                </div>
-              </Slide>
+              <FullPixelImage
+                level="clear"
+                className={clsx(classes.FullPixelImage, enhance ? classes.enhanceAnimation : false)}
+              />
             </Grid>
           </Grid>
         </Grid>
