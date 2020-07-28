@@ -43,7 +43,7 @@ const Header = () => {
                 </Typography>
               </Box>
               <Box color="#19305A" marginTop="3px">
-                <Typography variant="caption" component="div">
+                <Typography variant="subtitle1" component="div">
                   by
                 </Typography>
               </Box>

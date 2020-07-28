@@ -41,7 +41,7 @@ let theme = createMuiTheme({
     },
   },
   typography: {
-    fontFamily: 'Encode Sans, Titillium Web',
+    fontFamily: 'Encode Sans, Encode Sans Medium, Titillium Web',
     h1: {
       fontSize: 55,
       fontFamily: 'Encode Sans',
@@ -64,6 +64,7 @@ let theme = createMuiTheme({
       fontFamily: 'Encode Sans',
       fontWeight: 500,
       lineHeight: 1.5,
+      color: '#00447a',
     },
     button: {
       fontSize: 15,
@@ -72,10 +73,31 @@ let theme = createMuiTheme({
       textTransform: 'none',
       borderWidth: 2,
     },
+    subtitle1: {
+      fontSize: 10,
+      fontFamily: 'Encode Sans',
+      fontWeight: 600,
+    },
+    subtitle2: {
+      fontSize: 10,
+      fontFamily: 'Encode Sans',
+      fontWeight: 600,
+      color: '#60759C',
+      textTransform: 'uppercase',
+      whiteSpace: 'nowrap',
+    },
     caption: {
       fontSize: 10,
       fontFamily: 'Encode Sans',
       fontWeight: 600,
+      color: '#95aac9',
+      textTransform: 'uppercase',
+    },
+    body1: {
+      fontSize: 13,
+      color: '#5b80a0',
+      padding: '4px 0',
+      fontWeight: 500,
     },
   },
 });
