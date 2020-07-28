@@ -19,10 +19,12 @@ const useStyles = makeStyles(theme => ({
     },
   },
   relativeContainer: {
-    position: 'relative',
-    bottom: 140,
-    [theme.breakpoints.down('sm')]: {
-      bottom: 40,
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    [theme.breakpoints.up('xl')]: {
+      top: 80,
     },
   },
   fullHeight: {
@@ -31,8 +33,13 @@ const useStyles = makeStyles(theme => ({
   section: {
     backgroundColor: '#f7f9fb',
     marginTop: 200,
+    height: 300,
+    position: 'relative',
     [theme.breakpoints.down('sm')]: {
       marginTop: 100,
+    },
+    [theme.breakpoints.up('xl')]: {
+      height: 400,
     },
   },
   textSection: {
@@ -50,8 +57,8 @@ const SectionE = () => {
   return (
     <section className={classes.section}>
       <Rectangle className={classes.rectangle} />
-      <Container className={clsx(classes.fullHeight, classes.container)}>
-        <Grid container className={classes.relativeContainer}>
+      <Container className={clsx(classes.fullHeight, classes.container, classes.relativeContainer)}>
+        <Grid container>
           <Hidden smDown>
             <Grid item md={5} xs={12}>
               <DevImage />
