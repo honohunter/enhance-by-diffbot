@@ -77,7 +77,7 @@ const SectionE = () => {
                 <Typography variant="h2">Developers? We’ve got you.</Typography>
               </Box>
               <Typography variant="h6">
-                <Box color="#5B7F9F" fontFamily="Titillium Web" textAlign="end">
+                <Box color="#5B7F9F" fontFamily="Titillium Web" textAlign={isSmallScreen ? 'center' : 'end'}>
                   Try our easy-to-use REST API to build <br />a completely custom solution.
                 </Box>
               </Typography>

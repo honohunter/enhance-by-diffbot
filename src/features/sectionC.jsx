@@ -79,8 +79,8 @@ const SectionC = () => {
               <Box color="#00447A" textAlign="center">
                 <Typography variant="h2">Garbage In, Data Out</Typography>
               </Box>
-              <Box color="#5B7F9F">
-                <Typography variant="h6">
+              <Box color="#5B7F9F" textAlign="center">
+                <Typography variant="h6" >
                   Automatically fix misspelled names, deduplicate records, and fill in missing details.
                 </Typography>
               </Box>

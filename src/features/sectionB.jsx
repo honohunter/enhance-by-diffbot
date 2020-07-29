@@ -206,12 +206,12 @@ const SectionB = () => {
                         <Grid container>
                           <img
                             src="https://media.idownloadblog.com/wp-content/uploads/2018/07/Apple-logo-black-and-white.png"
-                            style={{ width: '66px' }}
+                            style={{ width: '66px', marginBottom: '20px' }}
                           />
                         </Grid>
                       </Grid>
                       <Grid item xs={12} md={10}>
-                        <Box color="#00447a" textAlign="center">
+                        <Box color="#00447a">
                           <Typography variant="h6">Apple, Inc.</Typography>
                         </Box>
 
