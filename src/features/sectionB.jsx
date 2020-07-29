@@ -206,7 +206,7 @@ const SectionB = () => {
                         <Grid container>
                           <img
                             src="https://media.idownloadblog.com/wp-content/uploads/2018/07/Apple-logo-black-and-white.png"
-                            style={{ width: '66px', marginBottom: '20px' }}
+                            style={{ maxWidth: '66px', marginBottom: '20px' }}
                           />
                         </Grid>
                       </Grid>
