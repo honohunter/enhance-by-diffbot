@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Enhance by diffbot`,
-    description: `Exclusive conversations with insiders and fans who know wtfgo`,
+    description: `Enhance by diffbot`,
     author: `Enhance by diffbot`,
   },
   plugins: [
