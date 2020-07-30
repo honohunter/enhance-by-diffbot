@@ -12,7 +12,6 @@ import SectionC from '../features/sectionC';
 import SectionD from '../features/sectionD';
 import SectionE from '../features/sectionE';
 import SectionF from '../features/sectionF';
-import Footer from '../features/footer';
 
 let theme = createMuiTheme({
   overrides: {
